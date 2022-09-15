@@ -1,0 +1,1 @@
+database = C:\Users\Jiaming WANG\Documents\GitHub\taiping\gophish-CN\gophish.db
