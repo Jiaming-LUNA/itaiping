@@ -226,7 +226,7 @@ function generateTimelineChart(campaigns) {
             type: 'areaspline'
         },
         title: {
-            text: 'Phishing Success Overview'
+            text: '钓鱼总览'
         },
         xAxis: {
             type: 'datetime',

@@ -450,7 +450,7 @@ var renderTimelineChart = function (chartopts) {
             height: "200px"
         },
         title: {
-            text: 'Campaign Timeline'
+            text: '项目时间线'
         },
         xAxis: {
             type: 'datetime',
@@ -730,7 +730,7 @@ function load() {
                 $("#loading").hide()
                 $("#campaignResults").show()
                 // Set the title
-                $("#page-title").text("Results for " + c.name)
+                $("#page-title").text(c.name+"的结果")
                 if (c.status == "Completed") {
                     $('#complete_button')[0].disabled = true;
                     $('#complete_button').text('Completed!');
