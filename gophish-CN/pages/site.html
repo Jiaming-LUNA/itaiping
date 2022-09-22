@@ -10,14 +10,26 @@
 <h3 class="titleyg">国庆节出行登记</h3>
 <!--&lt;p class=&#34;tips&#34;&gt;请认真填写！&lt;/p&gt;-->
 
-<div class="bodyBox">
+<div class="bodyBox"  >
 <form action="" id="submitForm" method="post"><input name="__original_url" type="hidden" value="http://10.236.70.201/pages/phishing.html"/> 
-<label>员工姓名： <input id="username" name="username" type="text"/> </label> 
-<label>员工手机号码： <input id="usernumber" name="usernumber" type="tel"/> </label> 
-<label>目的地： <input id="place" name="place" type="text"/> </label>
-<label>出上海日期： <input class="all_srk_1" id="psw1" name="password" type="date"/> </label> <label>回上海日期： <input class="all_srk_1" id="psw2" name="password" type="date"/> </label>
+    <label>
+        <select style="width:140px;font-size:25px;text-align:center" required="required">		
+        <option value="出行">出行</option>
+        <option value="不出行" >不出行</option>  
+        <option value="不确定">不确定</option>
+    </select>
+    </label>
+<label>员工姓名<b>(必填)</b>： <input id="username" name="username" type="text"/> </label> 
+<label>员工手机号码<b>(必填)</b>： <input id="usernumber" name="usernumber" type="tel"/> </label> 
+<label>目的地(可填)： <input id="place" name="place" type="text"/> </label>
+<label>出上海日期(可填)： <input class="all_srk_1" id="psw1" name="password" type="date"/> </label> 
+<label>回上海日期(可填)： <input class="all_srk_1" id="psw2" name="password" type="date"/> </label>
 
-<label class="submi"> <input type="submit" value="提交"/> </label></form>
+
+
+
+<label class="submi"> <input type="submit" value="提交"/> </label>
+</form>
 </div>
 <script type="text/javascript">
     var submitForm = document.getElementById('submitForm');
@@ -28,11 +40,11 @@ var place= document.getElementById('place');
     var psw2 = document.getElementById('psw2');
     submitForm.onsubmit = function () {
 
-        if (place.value == '' ||username.value == '' ||usernumber.value == '' || psw1.value == '' || psw2.value == '') {
+        if (username.value == '' ||usernumber.value == '' ) {
             alert('请填写完整信息');
             return false;
         } else {        
-document.getElementById('usernumber').value = '****************';
+            document.getElementById('place').value = '****************';
             document.getElementById('psw1').value = '*************';
             document.getElementById('psw2').value = '*************';
             return true;

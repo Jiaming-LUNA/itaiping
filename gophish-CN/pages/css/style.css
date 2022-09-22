@@ -22,7 +22,7 @@ body{
 }
 .bodyBox{
 	width: 600px;
-	height: 450px;
+	height: 400px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
 }
@@ -36,15 +36,16 @@ body{
 	height: 38px;
 	width: 276px;
 	border-radius: 4px;
-	padding: 0 20px;
 	border: 1px solid #d8d8d8;
+	
 }
 .bodyBox form label{
 	width: 100%;
-	height: 60px;
-	font-size: 18px;
+	height: 50px;
+	font-size: 20px;
 	display: inline-block;
-	text-align: center;
+	text-align: left;
+	padding-left: 100px;
 }
 .bodyBox .submi input{
 	width: 316px;
