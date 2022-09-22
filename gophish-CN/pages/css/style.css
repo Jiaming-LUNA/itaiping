@@ -1,45 +1,51 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-body{
+
+body {
 	width: 100%;
 	height: 100%;
 	background-color: #f5f5f5;
 }
-.titleyg{
+
+.titleyg {
 	width: 100%;
 	height: 100px;
 	line-height: 100px;
 	text-align: center;
 	font-size: 25px;
 }
-.tips{
+
+.tips {
 	width: 100%;
 	height: 30px;
 	text-align: center;
 	line-height: 30px;
 }
-.bodyBox{
+
+.bodyBox {
 	width: 600px;
 	height: 400px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
 }
-.bodyBox form{
-	
-}
-.bodyBox form label:first-child{
+
+.bodyBox form {}
+
+.bodyBox form label:first-child {
 	margin-top: 55px;
 }
-.bodyBox form input{
+
+.bodyBox form input {
 	height: 38px;
 	width: 276px;
 	border-radius: 4px;
 	border: 1px solid #d8d8d8;
-	
+
 }
-.bodyBox form label{
+
+.bodyBox form label {
 	width: 100%;
 	height: 50px;
 	font-size: 20px;
@@ -47,7 +53,8 @@ body{
 	text-align: left;
 	padding-left: 100px;
 }
-.bodyBox .submi input{
+
+.bodyBox .submi input {
 	width: 316px;
 	margin-left: 53px;
 	color: #FFFFFF;
