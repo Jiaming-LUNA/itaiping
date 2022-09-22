@@ -148,7 +148,7 @@ function deleteCampaign() {
             })
         }
     }).then(function (result) {
-        if(result.value){
+        if (result.value) {
             Swal.fire(
                 'Campaign Deleted!',
                 'This campaign has been deleted!',
@@ -186,7 +186,7 @@ function completeCampaign() {
             })
         }
     }).then(function (result) {
-        if (result.value){
+        if (result.value) {
             Swal.fire(
                 'Campaign Completed!',
                 'This campaign has been completed!',
@@ -275,7 +275,7 @@ function replay(event_idx) {
             });
         }
     }).then(function (result) {
-        if (result.value){
+        if (result.value) {
             url = result.value
             submitForm()
         }
@@ -527,13 +527,13 @@ var renderPieChart = function (chartopts) {
                         left = chart.plotLeft + pie.center[0],
                         top = chart.plotTop + pie.center[1];
                     this.innerText = rend.text(chartopts['data'][0].count, left, top).
-                    attr({
-                        'text-anchor': 'middle',
-                        'font-size': '24px',
-                        'font-weight': 'bold',
-                        'fill': chartopts['colors'][0],
-                        'font-family': 'Helvetica,Arial,sans-serif'
-                    }).add();
+                        attr({
+                            'text-anchor': 'middle',
+                            'font-size': '24px',
+                            'font-weight': 'bold',
+                            'fill': chartopts['colors'][0],
+                            'font-family': 'Helvetica,Arial,sans-serif'
+                        }).add();
                 },
                 render: function () {
                     this.innerText.attr({
@@ -730,7 +730,7 @@ function load() {
                 $("#loading").hide()
                 $("#campaignResults").show()
                 // Set the title
-                $("#page-title").text(c.name+"的结果")
+                $("#page-title").text(c.name + "的结果")
                 if (c.status == "Completed") {
                     $('#complete_button')[0].disabled = true;
                     $('#complete_button').text('Completed!');
@@ -757,34 +757,34 @@ function load() {
                         [2, "asc"]
                     ],
                     columnDefs: [{
-                            orderable: false,
-                            targets: "no-sort"
-                        }, {
-                            className: "details-control",
-                            "targets": [1]
-                        }, {
-                            "visible": false,
-                            "targets": [0, 8]
+                        orderable: false,
+                        targets: "no-sort"
+                    }, {
+                        className: "details-control",
+                        "targets": [1]
+                    }, {
+                        "visible": false,
+                        "targets": [0, 8]
+                    },
+                    {
+                        "render": function (data, type, row) {
+                            return createStatusLabel(data, row[8])
                         },
-                        {
-                            "render": function (data, type, row) {
-                                return createStatusLabel(data, row[8])
-                            },
-                            "targets": [6]
-                        },
-                        {
-                            className: "text-center",
-                            "render": function (reported, type, row) {
-                                if (type == "display") {
-                                    if (reported) {
-                                        return "<i class='fa fa-check-circle text-center text-success'></i>"
-                                    }
-                                    return "<i role='button' class='fa fa-times-circle text-center text-muted' onclick='report_mail(\"" + row[0] + "\", \"" + campaign.id + "\");'></i>"
+                        "targets": [6]
+                    },
+                    {
+                        className: "text-center",
+                        "render": function (reported, type, row) {
+                            if (type == "display") {
+                                if (reported) {
+                                    return "<i class='fa fa-check-circle text-center text-success'></i>"
                                 }
-                                return reported
-                            },
-                            "targets": [7]
-                        }
+                                return "<i role='button' class='fa fa-times-circle text-center text-muted' onclick='report_mail(\"" + row[0] + "\", \"" + campaign.id + "\");'></i>"
+                            }
+                            return reported
+                        },
+                        "targets": [7]
+                    }
                     ]
                 });
                 resultsTable.clear();
@@ -931,15 +931,15 @@ function report_mail(rid, cid) {
         allowOutsideClick: false,
         showLoaderOnConfirm: true
     }).then(function (result) {
-        if (result.value){
-            api.campaignId.get(cid).success((function(c) {
+        if (result.value) {
+            api.campaignId.get(cid).success((function (c) {
                 report_url = new URL(c.url)
                 report_url.pathname = '/report'
                 report_url.search = "?rid=" + rid
                 $.ajax({
                     url: report_url,
                     method: "GET",
-                    success: function(data) {
+                    success: function (data) {
                         refresh();
                     }
                 });
