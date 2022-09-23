@@ -1,336 +1,151 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-fieldset,
-legend,
-button,
-input,
-textarea,
-th,
-td {
-	margin: 0;
-	padding: 0
-}
-
-html {
-	color: #000;
-	overflow-y: scroll;
-	overflow: -moz-scrollbars-vertical
-}
-
-body,
-button,
-input,
-select,
-textarea {
-	font-size: 12px;
-	font-family: arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-size: 100%
-}
-
-em {
-	font-style: normal
-}
-
-small {
-	font-size: 12px
-}
-
-ul,
-ol {
-	list-style: none
-}
-
-a {
-	text-decoration: none
-}
-
-a:hover {
-	text-decoration: underline
-}
-
-legend {
-	color: #000
-}
-
-fieldset,
-img {
-	border: 0
-}
-
-button,
-input,
-select,
-textarea {
-	font-size: 100%
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0
-}
-
-img {
-	-ms-interpolation-mode: bicubic
-}
-
-textarea {
-	resize: vertical
-}
-
-.left {
-	float: left
-}
-
-.right {
-	float: right
-}
-
-.overflow {
-	overflow: hidden
-}
-
-.hide {
-	display: none
-}
-
-.block {
-	display: block
-}
-
-.inline {
-	display: inline
-}
-
-.error {
-	color: #F00;
-	font-size: 12px
-}
-
-label,
-button {
-	cursor: pointer
-}
-
-.clearfix:after {
-	content: '\20';
-	display: block;
-	height: 0;
-	clear: both
-}
-
-.clearfix {
-	zoom: 1
-}
-
-.clear {
-	clear: both;
-	height: 0;
-	line-height: 0;
-	font-size: 0;
-	visibility: hidden;
-	overflow: hidden
-}
-
-.wordwrap {
-	word-break: break-all;
-	word-wrap: break-word
-}
-
-pre.wordwrap {
-	white-space: pre-wrap
-}
-
-body {
-	text-align: center
-}
-
-body,
-form {
-	position: relative
-}
-
-td {
-	text-align: left
-}
-
-img {
-	border: 0
-}
-
-.nav {
-	height: 440px;
-	width: 100%;
-	background: url(../images/shen1.png) no-repeat center;
-	background-size: 100% 100%;
-}
-
-.container {
-	width: 1135px;
-	margin: 0 auto;
-}
-
-.nav .container {
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#000;overflow-y:scroll;overflow:-moz-scrollbars-vertical}
+body,button,input,select,textarea{font-size:12px;font-family:arial,'Hiragino Sans GB','Microsoft Yahei','微软雅黑','宋体',\5b8b\4f53,Tahoma,Arial,Helvetica,STHeiti}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+em{font-style:normal}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+img{-ms-interpolation-mode:bicubic}
+textarea{resize:vertical}
+.left{float:left}
+.right{float:right}
+.overflow{overflow:hidden}
+.hide{display:none}
+.block{display:block}
+.inline{display:inline}
+.error{color:#F00;font-size:12px}
+label,button{cursor:pointer}
+.clearfix:after{content:'\20';display:block;height:0;clear:both}
+.clearfix{zoom:1}.clear{clear:both;height:0;line-height:0;font-size:0;visibility:hidden;overflow:hidden}
+.wordwrap{word-break:break-all;word-wrap:break-word}
+pre.wordwrap{white-space:pre-wrap}
+body{text-align:center}
+body,form{position:relative}
+td{text-align:left}
+img{border:0}
+.nav{height: 440px;width: 100%; background: url(../images/shen1.png) no-repeat center; background-size:100% 100% ;}
+.container{width: 1135px; margin: 0 auto;}
+.nav .container{
 	display: flex;
 }
-
-.nav .container .nav_title {
+.nav .container .nav_title{
 	width: 660px;
 	height: 440px;
 	text-align: left;
 }
-
-.nav .container .nav_title img {
+.nav .container .nav_title img{
 	width: 300px;
 	margin-left: 105px;
 	margin-top: 100px;
 }
-
-.nav .container .nav_title h3 {
+.nav .container .nav_title h3{
 	text-align: left;
 	font-weight: 600;
-	padding-left: 80px;
+	padding-left: 105px;
 	margin-bottom: 22px;
 }
-
-.nav .container .nav_title h3:nth-child(2) {
+.nav .container .nav_title h3:nth-child(2){
 	font-size: 48px;
 	color: #000000;
 	margin-top: 50px;
 }
-
-.nav .container .nav_title h3:last-child {
+.nav .container .nav_title h3:last-child{
 	font-size: 36px;
 }
-
-.nav .container .nav_picture {
+.nav .container .nav_picture{
 	width: 475px;
 	height: 440px;
 	text-align: left;
 }
-
-.nav .container .nav_picture img {
+.nav .container .nav_picture img{
 	margin-top: 105px;
 }
-
-.shen_body {
+.shen_body{
 	width: 100%;
 }
-
-.shen_body .container .five_not {
+.shen_body .container .five_not{
 	height: 1090px;
 	background: url(../images/shen4.png) no-repeat center;
 	background-size: 100% 100%;
 	margin-top: 80px;
 }
-
-.shen_body .container .five_not .small_title {
+.shen_body .container .five_not .small_title{
 	height: 290px;
 	display: flex;
 }
-
-.shen_body .container .five_not .small_title .small_left {
+.shen_body .container .five_not .small_title .small_left{
 	width: 660px;
 	height: 100%;
 }
-
-.shen_body .container .five_not .small_title .small_left h3 {
+.shen_body .container .five_not .small_title .small_left h3{
 	margin-top: 115px;
 	font-size: 24px;
 	color: #000000;
 	/*text-decoration: underline;*/
 	text-align: left;
-	padding-left: 100px;
+	padding-left:100px ;
 }
-
-.shen_body .container .five_not .small_title .small_left h3 span {
+.shen_body .container .five_not .small_title .small_left h3 span{
 	border-bottom: 1px solid #000000;
 }
-
-.shen_body .container .five_not .small_title .small_left p {
+.shen_body .container .five_not .small_title .small_left p{
 	font-size: 18px;
 	color: #25282F;
 	text-align: left;
 	padding-left: 115px;
 	margin: 10px 0;
 }
-
-.shen_body .container .five_not .small_title .small_right {
+.shen_body .container .five_not .small_title .small_right{
 	width: 475px;
 	height: 100%;
 	text-align: left;
 }
-
-.shen_body .container .five_not .small_title .small_right img {
+.shen_body .container .five_not .small_title .small_right img{
 	width: 320px;
 }
-
-.shen_body .container .five_not .fivenot_head h3 {
+.shen_body .container .five_not .fivenot_head h3{
 	font-size: 24px;
 	color: #000000;
 	text-align: left;
-	padding-left: 100px;
+	padding-left:100px ;
 }
-
-.shen_body .container .five_not .fivenot_head h3 span {
+.shen_body .container .five_not .fivenot_head h3 span{
 	border-bottom: 1px solid #000000;
 }
-
-.shen_body .container .five_not .fivenot_head ul {
+.shen_body .container .five_not .fivenot_head ul{
 	padding: 40px 92px;
 }
-
-.shen_body .container .five_not .fivenot_head ul li {
+.shen_body .container .five_not .fivenot_head ul li{
 	display: flex;
 	margin-bottom: 30px;
 }
-
-.shen_body .container .five_not .fivenot_head ul li:last-child {
+.shen_body .container .five_not .fivenot_head ul li:last-child{
 	margin-bottom: 0;
 }
-
-.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) {
+.shen_body .container .five_not .fivenot_head ul li:nth-child(odd){
 	height: 80px;
 }
-
-.shen_body .container .five_not .fivenot_head ul li:nth-child(even) {
+.shen_body .container .five_not .fivenot_head ul li:nth-child(even){
 	height: 150px;
 }
 
-.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) p:first-child {
+.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) p:first-child{
 	margin: 16px 20px 0 0;
 }
-
-.shen_body .container .five_not .fivenot_head ul li:nth-child(even) p:first-child {
+.shen_body .container .five_not .fivenot_head ul li:nth-child(even) p:first-child{
 	margin: 48px 20px 0 0;
 }
 
-.shen_body .container .five_not .fivenot_head ul li p {}
-
-.shen_body .container .five_not .fivenot_head ul li p:first-child {
+.shen_body .container .five_not .fivenot_head ul li p{
+	
+}
+.shen_body .container .five_not .fivenot_head ul li p:first-child{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -339,8 +154,7 @@ img {
 	font-size: 18px;
 	line-height: 40px;
 }
-
-.shen_body .container .five_not .fivenot_head ul li p:last-child {
+.shen_body .container .five_not .fivenot_head ul li p:last-child{
 	width: 810px;
 	font-size: 18px;
 	padding: 0 30px;
@@ -349,24 +163,22 @@ img {
 	padding-top: 10px;
 	line-height: 30px;
 }
-
-.shen_body .container .five_not .fivenot_head ul li .odd-p {
+.shen_body .container .five_not .fivenot_head ul li .odd-p{
 	height: 70px;
 	background: url(../images/shen6.png)no-repeat center;
 	background-size: 100% 100%;
 }
 
-.shen_body .container .five_not .fivenot_head ul li .even-p {
+.shen_body .container .five_not .fivenot_head ul li .even-p{
 	height: 140px;
 	background: url(../images/shen5.png)no-repeat center;
 	background-size: 100% 100%;
 }
 
-.shen_body .container .doubt {
+.shen_body .container .doubt{
 	width: 100%;
 }
-
-.shen_body .container .doubt p {
+.shen_body .container .doubt p{
 	width: 720px;
 	height: 50px;
 	line-height: 30px;
@@ -376,202 +188,187 @@ img {
 	color: #060300;
 	font-size: 16px;
 }
-
-.shen_body .container .doubt .yidong {
+.shen_body .container .doubt .yidong{
 	display: none;
 }
 
 /*移动端的样式*/
 @media (max-width: 768px) {
-	.container {
-		width: 100%;
-		margin: 0;
-	}
+.container{
+	width: 100%;
+	margin: 0;
+}
+.nav{
+	height: 16em;
+}
+.nav .container{
+	height: 100%;
+}
+.nav .container .nav_title{
+	width: 58%;
+	height: 100%;
+}
+.nav .container .nav_title img{
+	width: 10em;
+	margin-left: 1em;
+	margin-top: 4em;
+}
+.nav .container .nav_title h3:nth-child(2){
+	padding: 0;
+	margin: 0;
+	margin-top: 1.5em;
+	margin-left: 0.7em;
+	font-size: 1.5rem;
+	margin-bottom: 0.2em;
+}
+.nav .container .nav_title h3:last-child{
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	margin-left: 1em;
+}
 
-	.nav {
-		height: 16em;
-	}
+.nav .container .nav_picture{
+	width: 42%;
+	height: 100%;
+}
 
-	.nav .container {
-		height: 100%;
-	}
-
-	.nav .container .nav_title {
-		width: 58%;
-		height: 100%;
-	}
-
-	.nav .container .nav_title img {
-		width: 10em;
-		margin-left: 1em;
-		margin-top: 4em;
-	}
-
-	.nav .container .nav_title h3:nth-child(2) {
-		padding: 0;
-		margin: 0;
-		margin-top: 1.5em;
-		margin-left: 0.7em;
-		font-size: 1.5rem;
-		margin-bottom: 0.2em;
-	}
-
-	.nav .container .nav_title h3:last-child {
-		margin: 0;
-		padding: 0;
-		font-size: 1rem;
-		margin-left: 1em;
-	}
-
-	.nav .container .nav_picture {
-		width: 42%;
-		height: 100%;
-	}
-
-	.nav .container .nav_picture img {
-		width: 12em;
-		margin: 0;
-		margin-top: 3em;
-	}
+.nav .container .nav_picture img{
+	width: 12em;
+	margin: 0;
+	margin-top: 3em;
+}
 
 
-	.shen_body {
-		width: 100%;
-	}
+.shen_body{
+	width: 100%;
+}
+.shen_body .container .five_not{
+	width: 100%;
+	height: 69em;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+.shen_body .container .five_not .small_title{
+	/*display: none;*/
+	height: 15em;
+}
+.shen_body .container .five_not .small_title .small_left{
+	width: 62%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.shen_body .container .five_not .small_title .small_left h3{
+	margin: 0;
+	padding: 0;
+	font-size: 0.788rem;
+	margin-top: 3em;
+	margin-left: 1.5em;
+	margin-bottom: 0.7em;
+}
+.shen_body .container .five_not .small_title .small_left p{
+	margin: 0;
+	padding: 0;
+	font-size: 0.5rem;
+	margin-left: 1.6em;
+	margin-bottom: 0.3em;
+}
 
-	.shen_body .container .five_not {
-		width: 100%;
-		height: 69em;
-		margin: 0;
-		padding: 0;
-		background: none;
-	}
+.shen_body .container .five_not .small_title .small_right{
+	width: 38%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.shen_body .container .five_not .small_title .small_right img{
+	width: 11em;
+	margin-top: 1.5em;
+}
+.shen_body .container .five_not .fivenot_head{
+	
+}
+.shen_body .container .five_not .fivenot_head h3{
+	font-size: 1rem;
+	padding: 0;
+	padding-left: 1em;
+}
+.shen_body .container .five_not .fivenot_head ul{
+	padding: 0;
+	margin: 0;
+	padding-left: 1.4em;
+}
+.shen_body .container .five_not .fivenot_head ul li{
+	margin: 0.5em 0;
+	padding: 0;
+}
 
-	.shen_body .container .five_not .small_title {
-		/*display: none;*/
-		height: 15em;
-	}
-
-	.shen_body .container .five_not .small_title .small_left {
-		width: 62%;
-		height: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
-	.shen_body .container .five_not .small_title .small_left h3 {
-		margin: 0;
-		padding: 0;
-		font-size: 0.788rem;
-		margin-top: 3em;
-		margin-left: 1.5em;
-		margin-bottom: 0.7em;
-	}
-
-	.shen_body .container .five_not .small_title .small_left p {
-		margin: 0;
-		padding: 0;
-		font-size: 0.5rem;
-		margin-left: 1.6em;
-		margin-bottom: 0.3em;
-	}
-
-	.shen_body .container .five_not .small_title .small_right {
-		width: 38%;
-		height: 100%;
-		padding: 0;
-		margin: 0;
-	}
-
-	.shen_body .container .five_not .small_title .small_right img {
-		width: 11em;
-		margin-top: 1.5em;
-	}
-
-	.shen_body .container .five_not .fivenot_head {}
-
-	.shen_body .container .five_not .fivenot_head h3 {
-		font-size: 1rem;
-		padding: 0;
-		padding-left: 1em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul {
-		padding: 0;
-		margin: 0;
-		padding-left: 1.4em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li {
-		margin: 0.5em 0;
-		padding: 0;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) {
-		height: 8em;
-		/*margin-bottom: 4em;*/
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:first-child {
-		height: 6em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:nth-child(even) {
-		height: 13em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) p:first-child {
-		margin: 0;
-		margin-top: 1.4em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:first-child p:first-child {
-		margin: 0;
-		margin-top: 0.8em;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li p:last-child {
-		width: 77%;
-		padding: 0;
-		margin: 0;
-		line-height: 1.8rem;
-		margin-left: 1em;
-		font-size: 0.5rem;
-		padding: 0.8rem;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li .odd-p {
-		height: 5em;
-		background: none;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li .even-p {
-		background: none;
-	}
-
-	.shen_body .container .five_not .fivenot_head ul li:nth-child(even) p:first-child {
-		margin: 0;
-		margin-top: 1em;
-	}
-
-	.shen_body .container .doubt {
-		height: 5em;
-	}
-
-	.shen_body .container .doubt .pc_p {
-		display: none;
-	}
-
-	.shen_body .container .doubt .yidong {
-		width: 100%;
-		height: 2em;
-		margin: 0;
-		padding: 0;
-		text-align: left;
-		display: block;
-		line-height: 1em;
-		font-size: 0.5rem;
-		text-align: center;
-	}
+.shen_body .container .five_not .fivenot_head ul li:nth-child(odd){
+	height: 8em;
+	/*margin-bottom: 4em;*/
+}
+.shen_body .container .five_not .fivenot_head ul li:first-child{
+	height: 6em;
+}
+.shen_body .container .five_not .fivenot_head ul li:nth-child(even) {
+    height: 13em;
+}
+.shen_body .container .five_not .fivenot_head ul li:nth-child(odd) p:first-child{
+	margin: 0;
+	margin-top: 1.4em;
+}
+.shen_body .container .five_not .fivenot_head ul li:first-child p:first-child{
+	margin: 0;
+	margin-top: 0.8em;
+}
+.shen_body .container .five_not .fivenot_head ul li p:last-child{
+	width: 77%;
+	padding: 0;
+	margin: 0;
+	line-height: 1.8rem;
+	margin-left: 1em;
+	font-size: 0.5rem;
+	padding: 0.8rem;
+}
+.shen_body .container .five_not .fivenot_head ul li .odd-p{
+	height: 5em;
+	background: none;
+}
+.shen_body .container .five_not .fivenot_head ul li .even-p{
+	background: none;
+}
+.shen_body .container .five_not .fivenot_head ul li:nth-child(even) p:first-child{
+	margin: 0;
+	margin-top: 1em;
+}
+.shen_body .container .doubt{
+	height: 5em;
+}
+.shen_body .container .doubt .pc_p{
+	display: none;
+}
+.shen_body .container .doubt .yidong{
+	width: 100%;
+	height: 2em;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	display: block;
+	line-height: 1em;
+	font-size: 0.5rem;
+	text-align: center;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+

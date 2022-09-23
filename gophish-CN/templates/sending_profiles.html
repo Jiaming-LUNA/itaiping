@@ -5,8 +5,7 @@
     </h1>
     <div id="flashes" class="row"></div>
     <div class="row">
-        <button type="button" class="btn btn-primary" onclick="edit(-1)"
-            data-toggle="modal" data-backdrop="static"
+        <button type="button" class="btn btn-primary" onclick="edit(-1)" data-toggle="modal" data-backdrop="static"
             data-target="#modal"><i class="fa fa-plus"></i> 创建新的邮箱配置</button>
     </div>
     &nbsp;
@@ -34,14 +33,12 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog"
-    aria-labelledby="modalLabel">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- New Template Modal -->
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close" onclick="dismiss()"><span
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismiss()"><span
                         aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="profileModalLabel">创建新的邮箱配置</h4>
             </div>
@@ -49,54 +46,38 @@
                 <div class="row" id="modal.flashes"></div>
                 <div class="form-group">
                     <label class="control-label" for="name">名称:</label>
-                    <input type="text" class="form-control" placeholder="配置名称"
-                        id="name" autofocus />
+                    <input type="text" class="form-control" placeholder="配置名称" id="name" autofocus />
                     <label class="control-label" for="interface_type">接口类型:</label>
-                    <input type="text" class="form-control" value="SMTP"
-                        id="interface_type" disabled />
+                    <input type="text" class="form-control" value="SMTP" id="interface_type" disabled />
                     <label class="control-label" for="from">来自:</label>
-                    <input type="text" class="form-control" placeholder="姓名
-                    <test@example.com>" id="from" required />
+                    <input type="text" class="form-control" placeholder="姓名 <test@example.com>" id="from"
+                        required />
                     <label class="control-label" for="host">Host:</label>
-                    <input type="text" class="form-control"
-                        placeholder="smtp.example.com:25" id="host" required />
+                    <input type="text" class="form-control" placeholder="smtp.example.com:25" id="host" required />
                     <label class="control-label" for="username">账户:</label>
-                    <input type="text" class="form-control" placeholder="邮箱地址"
-                        id="username" />
+                    <input type="text" class="form-control" placeholder="邮箱地址" id="username" />
                     <label class="control-label" for="password">密码:</label>
-                    <input type="password" class="form-control"
-                        placeholder="SMTP授权密码" id="password" />
+                    <input type="password" class="form-control" placeholder="SMTP授权密码" id="password" />
                     <div class="checkbox checkbox-primary">
                         <input id="ignore_cert_errors" type="checkbox" checked>
-                        <label for="ignore_cert_errors">忽略证书错误 <i class="fa
-                                fa-question-circle" data-toggle="tooltip"
-                                data-placement="right"
-                                title="Ignore common certificate errors such as
-                                self-signed certs (exposes you to MiTM attacks -
-                                use carefully!)"></i></label>
+                        <label for="ignore_cert_errors">忽略证书错误 <i class="fa fa-question-circle"
+                                data-toggle="tooltip" data-placement="right" title="Ignore common certificate errors such as self-signed certs (exposes you to MiTM attacks - use carefully!)"></i></label>
                     </div>
                     <label class="control-label" for="headersForm">邮件标头:</label>
                     <form id="headersForm">
                         <div class="col-md-4">
-                            <input type="text" class="form-control"
-                                name="headerKey" id="headerKey"
-                                placeholder="X-Custom-Header">
+                            <input type="text" class="form-control" name="headerKey" id="headerKey" placeholder="X-Custom-Header">
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control"
-                                name="headerValue" id="headerValue"
-                                placeholder='{{"{{"}}.URL{{"}}"}}-gophish'>
+                            <input type="text" class="form-control" name="headerValue" id="headerValue" placeholder='{{"{{"}}.URL{{"}}"}}-gophish'>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-danger btn-headers"
-                                type="submit"><i class="fa fa-plus"></i>
-                                添加标头</button>
+                            <button class="btn btn-danger btn-headers" type="submit"><i class="fa fa-plus"></i> 添加标头</button>
                         </div>
                     </form>
                     <br />
                     <br />
-                    <table id="headersTable" class="table table-hover
-                        table-striped table-condensed">
+                    <table id="headersTable" class="table table-hover table-striped table-condensed">
                         <thead>
                             <tr>
                                 <th>标头</th>
@@ -107,30 +88,24 @@
                         <tbody>
                         </tbody>
                     </table>
-                    <button type="button" data-toggle="modal"
-                        data-backdrop="static" data-target="#sendTestEmailModal"
-                        class="btn btn-primary"><i class="fa fa-envelope"></i>
-                        发送测试邮件</button>
+                    <button type="button" data-toggle="modal" data-backdrop="static" data-target="#sendTestEmailModal"
+                        class="btn btn-primary"><i class="fa fa-envelope"></i> 发送测试邮件</button>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn
-                    btn-default" onclick="dismiss()">取消</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default" onclick="dismiss()">取消</button>
                 <button type="button" class="btn btn-primary" id="modalSubmit">保存配置</button>
             </div>
         </div>
     </div>
 </div>
 <!-- Send Test Email Modal -->
-<div class="modal" id="sendTestEmailModal" tabindex="-1" role="dialog"
-    aria-labelledby="modalLabel">
+<div class="modal" id="sendTestEmailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- New Email Modal -->
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="sendTestEmailModalTitle">发送测试邮件</h4>
             </div>
             <div class="modal-body">
@@ -141,28 +116,22 @@
                     </div>
                     <br>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control" placeholder="姓"
-                            name="to_first_name">
+                        <input type="text" class="form-control" placeholder="姓" name="to_first_name">
                     </div>
                     <div class="col-sm-2">
-                        <input type="text" class="form-control" placeholder="名"
-                            name="to_last_name">
+                        <input type="text" class="form-control" placeholder="名" name="to_last_name">
                     </div>
                     <div class="col-sm-4">
-                        <input type="email" class="form-control"
-                            placeholder="邮箱地址" name="to_email" required>
+                        <input type="email" class="form-control" placeholder="邮箱地址" name="to_email" required>
                     </div>
                     <div class="col-sm-4">
-                        <input type="text" class="form-control" placeholder="部门"
-                            name="to_position">
+                        <input type="text" class="form-control" placeholder="部门" name="to_position">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn
-                    btn-default">取消</button>
-                <button type="button" class="btn btn-primary"
-                    id="sendTestModalSubmit" onclick="sendTestEmail()"><i
+                <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+                <button type="button" class="btn btn-primary" id="sendTestModalSubmit" onclick="sendTestEmail()"><i
                         class="fa fa-envelope"></i> 发送</button>
             </div>
         </div>

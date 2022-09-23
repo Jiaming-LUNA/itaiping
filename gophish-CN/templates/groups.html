@@ -7,8 +7,7 @@
     </div>
     <div id="flashes" class="row"></div>
     <div class="row">
-        <button type="button" class="btn btn-primary" onclick="edit(-1)"
-            data-toggle="modal" data-backdrop="static"
+        <button type="button" class="btn btn-primary" onclick="edit(-1)" data-toggle="modal" data-backdrop="static"
             data-target="#modal">
             <i class="fa fa-plus"></i> 创建新的组</button>
     </div>
@@ -37,13 +36,11 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog"
-    aria-labelledby="modalLabel">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-title" id="groupModalLabel">创建新组</h4>
@@ -52,13 +49,11 @@
                 <div class="row" id="modal.flashes"></div>
                 <label class="control-label" for="name">名称:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control"
-                        ng-model="group.name" placeholder="组名" id="name"
+                    <input type="text" class="form-control" ng-model="group.name" placeholder="组名" id="name"
                         autofocus />
                 </div>
                 <div class="form-group">
-                    <span class="btn btn-danger btn-file" data-toggle="tooltip"
-                        data-placement="right"
+                    <span class="btn btn-danger btn-file" data-toggle="tooltip" data-placement="right"
                         title="Supports CSV files" id="fileUpload">
                         <i class="fa fa-plus"></i> 批量导入用户
                         <input type="file" id="csvupload" multiple>
@@ -69,20 +64,16 @@
                 <div class="row">
                     <form id="targetForm">
                         <div class="col-sm-2">
-                            <input type="text" class="form-control"
-                                placeholder="姓" id="firstName">
+                            <input type="text" class="form-control" placeholder="姓" id="firstName">
                         </div>
                         <div class="col-sm-2">
-                            <input type="text" class="form-control"
-                                placeholder="名" id="lastName">
+                            <input type="text" class="form-control" placeholder="名" id="lastName">
                         </div>
                         <div class="col-sm-3">
-                            <input type="email" class="form-control"
-                                placeholder="邮箱地址" id="email" required>
+                            <input type="email" class="form-control" placeholder="邮箱地址" id="email" required>
                         </div>
                         <div class="col-sm-3">
-                            <input type="text" class="form-control"
-                                placeholder="部门" id="position">
+                            <input type="text" class="form-control" placeholder="部门" id="position">
                         </div>
                         <div class="col-sm-1">
                             <button type="submit" class="btn btn-danger btn-lg">
@@ -91,8 +82,7 @@
                     </form>
                 </div>
                 <br />
-                <table id="targetsTable" class="table table-hover table-striped
-                    table-condensed">
+                <table id="targetsTable" class="table table-hover table-striped table-condensed">
                     <thead>
                         <tr>
                             <th>姓</th>
@@ -100,19 +90,17 @@
                             <th>邮箱地址</th>
                             <th>部门</th>
                             <th class="no-sort"></th>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default"
-                            data-dismiss="modal">关闭</button>
-                        <button type="button" class="btn btn-primary"
-                            id="modalSubmit">保存更改</button>
-                    </div>
-                </div>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="modalSubmit">保存更改</button>
             </div>
         </div>
-        {{end}} {{define "scripts"}}
-        <script src="/js/dist/app/groups.min.js"></script>
-        {{end}}
+    </div>
+</div>
+{{end}} {{define "scripts"}}
+<script src="/js/dist/app/groups.min.js"></script>
+{{end}}

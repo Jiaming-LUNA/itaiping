@@ -7,8 +7,7 @@
     </div>
     <div id="flashes" class="row"></div>
     <div class="row">
-        <button type="button" class="btn btn-primary" onclick="edit(-1)"
-            data-toggle="modal" data-backdrop="static"
+        <button type="button" class="btn btn-primary" onclick="edit(-1)" data-toggle="modal" data-backdrop="static"
             data-target="#modal"><i class="fa fa-plus"></i> 创建新的钓鱼邮件模板</button>
     </div>
     &nbsp;
@@ -35,14 +34,12 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog"
-    aria-labelledby="modalLabel">
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- New Template Modal -->
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close" onclick="dismiss()"><span
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismiss()"><span
                         aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="templateModalLabel">创建新的钓鱼邮件模板</h4>
             </div>
@@ -50,36 +47,27 @@
                 <div class="row" id="modal.flashes"></div>
                 <label class="control-label" for="name">名称:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control"
-                        ng-model="template.name" placeholder="模板名称" id="name"
+                    <input type="text" class="form-control" ng-model="template.name" placeholder="模板名称" id="name"
                         autofocus />
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-danger" data-toggle="modal"
-                        data-backdrop="static"
-                        data-target="#importEmailModal"><i class="fa
-                            fa-envelope"></i>
+                    <button class="btn btn-danger" data-toggle="modal" data-backdrop="static" data-target="#importEmailModal"><i
+                            class="fa fa-envelope"></i>
                         上传邮件</button>
                 </div>
                 <label class="control-label" for="subject">主题:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="邮件主题"
-                        id="subject" />
+                    <input type="text" class="form-control" placeholder="邮件主题" id="subject" />
                 </div>
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li class="active" role="text"><a href="#text"
-                            aria-controls="text" role="tab"
-                            data-toggle="tab">文本内容</a></li>
-                    <li role="html"><a href="#html" aria-controls="html"
-                            role="tab" data-toggle="tab">HTML</a></li>
+                    <li class="active" role="text"><a href="#text" aria-controls="text" role="tab" data-toggle="tab">文本内容</a></li>
+                    <li role="html"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
                 </ul>
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="text">
-                        <textarea rows="10" id="text_editor"
-                            class="gophish-editor form-control"
-                            placeholder="全文"></textarea>
+                        <textarea rows="10" id="text_editor" class="gophish-editor form-control" placeholder="全文"></textarea>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="html">
                         <textarea id="html_editor"></textarea>
@@ -89,10 +77,8 @@
                     <input id="use_tracker_checkbox" type="checkbox" checked>
                     <label for="use_tracker_checkbox">添加追踪图片</label>
                 </div>
-                <span class="btn btn-danger btn-file"><i class="fa fa-plus"></i>
-                    添加附件
-                    <input id="attachmentUpload" type="file"
-                        onchange="attach(this.files)" multiple>
+                <span class="btn btn-danger btn-file"><i class="fa fa-plus"></i> 添加附件
+                    <input id="attachmentUpload" type="file" onchange="attach(this.files)" multiple>
                 </span>
                 <br />
                 <br />
@@ -112,32 +98,26 @@
                 <hr>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn
-                    btn-default" onclick="dismiss()">取消</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default" onclick="dismiss()">取消</button>
                 <button type="button" class="btn btn-primary" id="modalSubmit">保存模板</button>
             </div>
         </div>
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="importEmailModal" tabindex="-1" role="dialog"
-    aria-labelledby="modalLabel">
+<div class="modal fade" id="importEmailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <!-- New Email Modal -->
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                    aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="importEmailModalLabel">上传钓鱼邮件</h4>
             </div>
             <div class="modal-body">
                 <div class="row" id="modal.flashes"></div>
                 <label class="control-label" for="email">钓鱼邮件内容:</label>
                 <div class="form-group">
-                    <textarea rows="10" id="email_content" class="gophish-editor
-                        form-control"
-                        placeholder="原始电子邮件源"></textarea>
+                    <textarea rows="10" id="email_content" class="gophish-editor form-control" placeholder="原始电子邮件源"></textarea>
                 </div>
                 <div class="checkbox checkbox-primary">
                     <input id="convert_links_checkbox" type="checkbox" checked>
@@ -145,10 +125,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn
-                    btn-default">取消</button>
-                <button type="button" class="btn btn-primary" id="modalSubmit"
-                    onclick="importEmail()">上传</button>
+                <button type="button" data-dismiss="modal" class="btn btn-default">取消</button>
+                <button type="button" class="btn btn-primary" id="modalSubmit" onclick="importEmail()">上传</button>
             </div>
         </div>
     </div>
