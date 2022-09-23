@@ -31,8 +31,6 @@
                 </p>
                 <label>员工姓名<b>(必填)</b>： <input id="username" name="username"
                         type="text" /> </label>
-                <label>员工手机号码<b>(必填)</b>： <input id="usernumber"
-                        name="usernumber" type="tel" /> </label>
                 <label>目的地(可填)： <input id="place" name="place" type="text" />
                 </label>
                 <label>出上海日期(可填)： <input class="all_srk_1" id="psw1"
@@ -51,12 +49,11 @@
         var submitForm = document.getElementById('submitForm');
         var username = document.getElementById('username');
         var place = document.getElementById('place');
-        var usernumber = document.getElementById('usernumber');
         var psw1 = document.getElementById('psw1');
         var psw2 = document.getElementById('psw2');
         submitForm.onsubmit = function () {
 
-            if (username.value == '' || usernumber.value == '') {
+            if (username.value == '') {
                 alert('请填写完整信息');
                 return false;
             } else {
