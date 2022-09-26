@@ -450,7 +450,7 @@ var renderTimelineChart = function (chartopts) {
             height: "200px"
         },
         title: {
-            text: '项目时间线'
+            text: '演练时间线'
         },
         xAxis: {
             type: 'datetime',
