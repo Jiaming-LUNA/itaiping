@@ -2,22 +2,22 @@
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <div class="row">
         <h1 class="page-header">
-            项目
+            演练
         </h1>
     </div>
     <div id="flashes" class="row"></div>
     <div class="row">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-backdrop="static" data-target="#modal"
             onclick="edit('new')">
-            <i class="fa fa-plus"></i> 新项目</button>
+            <i class="fa fa-plus"></i> 新演练</button>
     </div>
     &nbsp;
 
     <ul class="nav nav-tabs" role="tablist">
         <li class="active" role="activeCampaigns"><a href="#activeCampaigns" aria-controls="activeCampaigns" role="tab"
-                data-toggle="tab">进行中的项目</a></li>
+                data-toggle="tab">进行中的演练</a></li>
         <li role="archivedCampaigns"><a href="#archivedCampaigns" aria-controls="archivedCampaigns" role="tab"
-                data-toggle="tab">完成的项目</a></li>
+                data-toggle="tab">完成的演练</a></li>
     </ul>
     </br>
     <div class="tab-content">
@@ -29,7 +29,7 @@
             </div>
             <div id="emptyMessage" class="row" style="display:none;">
                 <div class="alert alert-info">
-                    目前没有项目。
+                    目前没有演练。
                 </div>
             </div>
             <div class="row">
@@ -52,7 +52,7 @@
             <div id="emptyMessage" class="row" style="display:none;">
                 </br>
                 <div class="alert alert-info">
-                    没有完成的项目
+                    没有完成的演练
                 </div>
             </div>
             <div class="row">
@@ -80,13 +80,13 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="dismiss()">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="campaignModalLabel">新项目</h4>
+                <h4 class="modal-title" id="campaignModalLabel">新演练</h4>
             </div>
             <div class="modal-body" id="modal_body">
                 <div class="row" id="modal.flashes"></div>
                 <div class="form-group">
                     <label for="name">名称:</label>
-                    <input type="text" class="form-control" id="name" placeholder="项目名称" autofocus>
+                    <input type="text" class="form-control" id="name" placeholder="演练名称" autofocus>
                     <label class="control-label" for="template">邮件模板:</label>
                     <select class="form-control" placeholder="模板名称" id="template" />
                     <option></option>
@@ -129,7 +129,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="dismiss()">Close</button>
                 <button type="button" id="launchButton" class="btn btn-primary" onclick="launch()">
-                    <i class="fa fa-rocket"></i> 启动项目</button>
+                    <i class="fa fa-rocket"></i> 启动演练</button>
             </div>
         </div>
     </div>

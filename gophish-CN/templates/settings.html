@@ -1,16 +1,14 @@
 {{define "body"}}
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
     <div class="row">
-        <h1 class="page-header">设置</h1>
+        <h1 class="page-header">设置和API</h1>
     </div>
     <div id="flashes" class="row"></div>
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li class="active" role="mainSettings"><a href="#mainSettings" aria-controls="mainSettings" role="tab"
                 data-toggle="tab">账户设置</a></li>
-        <li role="uiSettings"><a href="#uiSettings" aria-controls="uiSettings" role="tab" data-toggle="tab">UI设置</a></li>
-        <li role="reportingSettings"><a href="#reportingSettings" aria-controls="reportingSettings" role="tab" id="reporttab"
-            data-toggle="tab">报告设置</a></li>
+
     </ul>
     <!-- Tab Panes -->
     <div class="tab-content">
@@ -75,82 +73,6 @@
             </form>
             <br />
         </div>
-        <div role="tabpanel" class="tab-pane" id="uiSettings">
-            <br />
-            <div class="checkbox checkbox-primary">
-                <input id="use_map" type="checkbox">
-                <label for="use_map">展示项目结果map</label>
-            </div>
-        </div>
-        <!-- Reporting Settings Begin -->
-        <div role="tabpanel" class="tab-pane" id="reportingSettings">
-            <form id="imapForm" >
-            <br />
-            <div class="row">
-                <div class="col-md-6">
-                    Monitor an IMAP account for emails reported by users.
-                </div>
-             </div>
-            <br />
-
-            <div class="row">
-                <div class="col-md-6">
-                <div class="checkbox checkbox-primary">
-                    <input id="use_imap" type="checkbox">
-                    <label for="use_imap">Enable Email Account Monitoring</label>
-                </div>
-                </div>
-             </div>
-            <br />
-
-            
-            <div class="row">
-                <label for="imaphost" class="col-sm-2 control-label form-label">IMAP Host:</label>
-                <div class="col-md-6">
-                    <input type="text" id="imaphost" name="imaphost" placeholder="imap.example.com"
-                        class="form-control" />
-                </div>
-            </div>
-            <br />
-
-            <div class="row">
-                <label for="imapport" class="col-sm-2 control-label form-label">IMAP Port:</label>
-                <div class="col-md-6">
-                    <input type="text" id="imapport" name="imapport" placeholder="993"
-                        class="form-control" />
-                </div>
-            </div>
-            <br />
-
-            <div class="row">
-                <label for="imapusername" class="col-sm-2 control-label form-label">IMAP 账户:</label>
-                <div class="col-md-6">
-                    <input type="text" id="imapusername" name="imapusername" placeholder="账户"
-                        class="form-control" />
-                </div>
-            </div>
-            <br />
-
-            <div class="row">
-                <label for="imappassword" class="col-sm-2 control-label form-label">IMAP 密码:</label>
-                <div class="col-md-6">
-                    <input type="password" id="imappassword" name="imappassword" placeholder="密码" autocomplete="off"
-                        class="form-control" />
-                </div>
-            </div>
-            <br />
-
-
-            <div class="row">
-                <label for="use_tls" class="col-sm-2 control-label form-label">使用TLS:</label>
-                <div class="col-md-6">
-                    <div class="checkbox checkbox-primary">
-                        <input id="use_tls" type="checkbox">
-                        <label for="use_tls"></label>
-                    </div>
-                    
-                </div>
-            </div>
 
              <!-- Advanced Settings-->
             <div id="advancedarea" style="display: none;">
